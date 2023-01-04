@@ -1,4 +1,4 @@
 # LeetCode-Python-Solution 
-Python solutions for leetcode.\n
-Each problem matches a .ipynb file.\n 
-You can run these files in jupyter.\n
+Python solutions for leetcode.<br>
+Each problem matches a .ipynb file.<br> 
+You can run these files in jupyter.<br>
