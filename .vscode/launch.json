@@ -4,16 +4,52 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "justMyCode": true,
             "python": "${command:python.interpreterPath}",
             "args": [],
-            "env": {}
+            "env": {},
+            // "jupyterLaunch": true,
+            "justMyCode": false
         }
     ]
+    
+//     在 VS Code 中调试文件时，可以使用以下参数：
+
+// "name"：启动配置的名称。
+
+// "type"：调试器类型，例如 Python、JavaScript 等。
+
+// "request"：启动请求类型。例如 "launch" 表示启动并调试代码，"attach" 表示附加到运行中的进程。
+
+// "program"：要调试的程序的入口文件。
+
+// "args"：传递给程序的命令行参数。
+
+// "cwd"：程序的当前工作目录。
+
+// "env"：程序运行时使用的环境变量。
+
+// "console"：调试控制台类型。可以设置为 "internalConsole"（默认）、"integratedTerminal" 或 "externalTerminal"。
+
+// "internalConsoleOptions"：控制内部调试控制台的选项。
+
+// "stopOnEntry"：是否在程序启动时停止调试器。
+
+// "sourceMaps"：是否启用源代码映射。
+
+// "outFiles"：编译输出文件的位置。
+
+// "preLaunchTask"：在启动调试器之前执行的任务。
+
+// "postDebugTask"：在调试完成后执行的任务。
+
+// "configurationResolver"：用于解析启动配置的函数。
+
+// 以上是一些常用的调试文件参数，您可以根据具体情况进行微调和使用。
 }
