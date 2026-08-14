@@ -7,7 +7,16 @@ Python solutions for LeetCode, each problem matches a `.ipynb` file. Run them in
 ## 目录结构
 
 ```
+```
+├── leetcode/                    ★ 题目集（按算法类型分类，2026-08 整理）
+│   ├── dynamic-programming/     动态规划（17）
+│   ├── binary-search/           二分查找（14）
+│   ├── math/                    数学（10）
+│   ├── two-pointers/            双指针（9）
+│   ├── graph/                   BFS/DFS（8）
+│   ├── ... 共 24 个分类，详见 leetcode/README.md
 ├── 0_*.ipynb / *.py          LeetCode 题解与 Python 基础笔记（根目录按题目组织）
+
 ├── 2024-consolidation/       2024 巩固：树等专题
 ├── 2024-spring-intern-algorithms/   2024 春实习算法题
 ├── 2025-spring/              2025 春：算法（二叉树等）与杂项
