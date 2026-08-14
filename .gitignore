@@ -18,3 +18,5 @@ Leetcode_solve
 !2026/rust_learning/rustlings/*.toml
 !2026/rust_learning/rustlings/*.lock
 !2026/rust_learning/rustlings/*/
+2026/rust_learning/rustlings/exercises/*/*
+!2026/rust_learning/rustlings/exercises/*/*.rs
