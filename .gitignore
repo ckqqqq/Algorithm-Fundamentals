@@ -6,3 +6,6 @@ Leetcode_solve
 .vscode/
 *.ipynb_checkpoints
 .lc-index.json
+
+# 2026 rust build artifacts
+2026/rust_learning/rustlings/target/
