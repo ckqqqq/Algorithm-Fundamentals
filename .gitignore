@@ -9,3 +9,12 @@ Leetcode_solve
 
 # 2026 rust build artifacts
 2026/rust_learning/rustlings/target/
+# compiled rust binaries (extensionless executables)
+2026/rust_learning/*
+!2026/rust_learning/*.rs
+!2026/rust_learning/*.md
+!2026/rust_learning/*/
+2026/rust_learning/rustlings/*
+!2026/rust_learning/rustlings/*.toml
+!2026/rust_learning/rustlings/*.lock
+!2026/rust_learning/rustlings/*/
