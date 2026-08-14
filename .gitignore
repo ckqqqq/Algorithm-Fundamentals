@@ -1,6 +1,6 @@
-.*pdf
+*.pdf
 Leetcode_solve
-.*gif
+*.gif
 .DS_Store
 .ipynb_checkpoints/
 .vscode/
