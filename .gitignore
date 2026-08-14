@@ -5,3 +5,4 @@ Leetcode_solve
 .ipynb_checkpoints/
 .vscode/
 *.ipynb_checkpoints
+.lc-index.json
