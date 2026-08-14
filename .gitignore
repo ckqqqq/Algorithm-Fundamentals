@@ -1,3 +1,7 @@
 .*pdf
 Leetcode_solve
 .*gif
+.DS_Store
+.ipynb_checkpoints/
+.vscode/
+*.ipynb_checkpoints
