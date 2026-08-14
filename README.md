@@ -2,41 +2,49 @@
 
 算法基本功学习仓库：LeetCode 题解、ICPC 模板、面试/笔试复习材料。
 
-Python solutions for LeetCode, each problem matches a `.ipynb` file. Run them in Jupyter.
+**结构（2026-08 重构）**：全部题目按算法类型组织为一级目录，共 244 个题目文件；知识笔记入 `notes/`，图片资源入 `assets/`。
 
-## 目录结构
+## 题目分类（一级目录）
 
+| 目录 | 题目数 |
+|---|---|
+| `misc/` | 50 |
+| `math/` | 22 |
+| `python-basics/` | 21 |
+| `dynamic-programming/` | 20 |
+| `binary-search/` | 17 |
+| `tree/` | 11 |
+| `graph/` | 10 |
+| `linked-list/` | 10 |
+| `prefix-sum/` | 9 |
+| `two-pointers/` | 9 |
+| `binary-indexed-tree/` | 8 |
+| `backtracking/` | 7 |
+| `string/` | 7 |
+| `greedy/` | 6 |
+| `sliding-window/` | 6 |
+| `hash/` | 5 |
+| `sorting/` | 5 |
+| `bit-manipulation/` | 4 |
+| `heap/` | 4 |
+| `trie/` | 4 |
+| `stack/` | 3 |
+| `matrix/` | 2 |
+| `simulation/` | 2 |
+| `leetcode/` | 1 |
+| `union-find/` | 1 |
+
+> 每个 `.ipynb` 首个 cell 为标准题面（自动抓取自 leetcode.cn 或按笔记合成），后续为个人笔记与题解。
+
+## 其他目录
+
+- `notes/` —— 知识笔记（Transformer/GRPO/RL/概率论/面试八股等）
+- `assets/` —— 图片与资源
+- `tools/classify.py` —— 题目整理工具：新题丢入根目录后运行自动分类 + 补题面
+
+```sh
+python3 tools/classify.py               # 分类新题 + 补题面
+python3 tools/classify.py --fetch-only  # 只补题面
 ```
-```
-├── leetcode/                    ★ 题目集（按算法类型分类，2026-08 整理）
-│   ├── dynamic-programming/     动态规划（17）
-│   ├── binary-search/           二分查找（14）
-│   ├── math/                    数学（10）
-│   ├── two-pointers/            双指针（9）
-│   ├── graph/                   BFS/DFS（8）
-│   ├── ... 共 24 个分类，详见 leetcode/README.md
-├── 0_*.ipynb / *.py          LeetCode 题解与 Python 基础笔记（根目录按题目组织）
 
-├── 2024-consolidation/       2024 巩固：树等专题
-├── 2024-spring-intern-algorithms/   2024 春实习算法题
-├── 2025-spring/              2025 春：算法（二叉树等）与杂项
-├── 2025-spring-intern-review/ 2025 春实习面试基础与复习
-│   ├── algorithms/           二分法 / 双指针 / 字符串 / 数组 / 二叉树
-│   ├── array-problems/       数组类题目
-│   ├── transformer-basics/   Transformer 基础（含 GRPO 手写实现）
-│   ├── interviews/           面试（淘天等）
-│   ├── written-tests/        笔试（正定 / 阿里系）
-│   └── misc/                 其他
-├── 2025-autumn/              2025 秋：Attention / 训练框架 / 手撕专题
-├── biweekly-contest/         双周赛
-├── weekly-contest/           周赛
-├── CSP_CCF/                  CSP/CCF 竞赛
-├── image/                    图片资源（dp / 树状数组 / 贪心等）
-├── leetcode-reference-with-diagrams/  带图参考（剑指 offer 等）
-└── LARGE_FILES.md            大文件清单（克隆慢的原因与处理建议）
-```
-
-## 备注
-
-- 目录命名统一为英文 kebab-case（2026-08 整理）。
 - 2025 New Plan. Go! Go! Go!

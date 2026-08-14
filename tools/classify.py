@@ -26,7 +26,7 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LEETCODE_DIR = os.path.join(REPO, 'leetcode')
+LEETCODE_DIR = os.path.join(REPO, 'misc')
 INDEX_URL = 'https://leetcode.cn/api/problems/all/'
 GRAPHQL_URL = 'https://leetcode.cn/graphql'
 
@@ -201,20 +201,21 @@ def main():
     ids = load_problem_index()
     targets = []
     bad_files = []
-    for root, _, fs in os.walk(LEETCODE_DIR):
-        for f in fs:
-            if not f.endswith('.ipynb'):
-                continue
-            path = os.path.join(root, f)
-            try:
-                nb = json.load(open(path))
-            except (json.JSONDecodeError, OSError):
-                bad_files.append(path)
-                continue
-            if not has_statement(nb):
-                pid = extract_problem_id(f, ids)
-                if pid:
-                    targets.append((path, pid))
+    for top in sorted(d for d in os.listdir('.') if os.path.isdir(d) and not d.startswith(('.', 'assets', 'notes', 'tools', 'leetcode-reference'))):
+        for root, _, fs in os.walk(top):
+            for f in fs:
+                if not f.endswith('.ipynb'):
+                    continue
+                path = os.path.join(root, f)
+                try:
+                    nb = json.load(open(path))
+                except (json.JSONDecodeError, OSError):
+                    bad_files.append(path)
+                    continue
+                if not has_statement(nb):
+                    pid = extract_problem_id(f, ids)
+                    if pid:
+                        targets.append((path, pid))
     if bad_files:
         print(f'警告: {len(bad_files)} 个损坏/非 JSON 的 ipynb 跳过:')
         for p in bad_files:
